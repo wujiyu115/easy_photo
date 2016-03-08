@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
@@ -32,28 +33,27 @@
             android:textColor="@android:color/white"
             android:textSize="20sp" />
 
-        <TextView
+
+        <com.cengalabs.flatui.views.FlatButton
             android:id="@+id/action_cache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
             android:layout_toLeftOf="@+id/action_manager"
-            android:background="@drawable/button_bg_black_green"
             android:gravity="center"
             android:text="@string/action_cache"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@android:color/white"
             android:visibility="visible" />
 
-        <TextView
+        <com.cengalabs.flatui.views.FlatButton
             android:id="@+id/action_manager"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-            android:background="@drawable/button_bg_black_green"
             android:gravity="center"
             android:text="@string/action_manager"
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -67,27 +67,25 @@
         android:layout_alignParentBottom="true"
         android:background="#303134" >
 
-        <TextView
+        <com.cengalabs.flatui.views.FlatButton
             android:id="@+id/del_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/button_bg_green_black"
             android:gravity="center"
             android:padding="10dp"
             android:text="@string/action_del_desc"
             android:textColor="@android:color/white" />
 
-        <TextView
+        <com.cengalabs.flatui.views.FlatButton
             android:id="@+id/save_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-            android:background="@drawable/button_bg_green_black"
             android:gravity="center"
             android:padding="10dp"
             android:text="@string/action_save_desc"

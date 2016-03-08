@@ -8,10 +8,9 @@ import android.os.Process;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
 import android.view.MenuItem;
 
-import com.farwmarth.easyphoto.R;
+import com.cengalabs.flatui.FlatUI;
 import com.farwmarth.easyphoto.fragment.HomeFragment;
 import com.farwmarth.easyphoto.fragment.MenuFragment;
 import com.farwmarth.easyphoto.fragment.MenuFragment.SLMenuListOnItemClickListener;
@@ -44,15 +43,11 @@ public class MainActivity extends SlidingFragmentActivity implements
 		setContentView(R.layout.frame_content);
 		setBehindContentView(R.layout.frame_left_menu);
 		
-		int width = getWindowManager().getDefaultDisplay().getWidth();
-//		System.out.println("宽度................"+width);
 		
 		mSlidingMenu = getSlidingMenu();
 		mSlidingMenu.setMode(SlidingMenu.LEFT);
-		mSlidingMenu.setSecondaryShadowDrawable(R.drawable.drawer_shadow);
-		mSlidingMenu.setShadowWidth(width/ 40);
+//		mSlidingMenu.setShadowWidth(width/ 40);
 //		mSlidingMenu.setBehindOffset(width / 5);
-		mSlidingMenu.setShadowDrawable(R.drawable.drawer_shadow);
 		mSlidingMenu.setShadowWidthRes(R.dimen.shadow_width);
 		mSlidingMenu.setBehindOffsetRes( R.dimen.slidingmenu_offset);
 		mSlidingMenu.setFadeDegree(0.35f);
@@ -69,6 +64,10 @@ public class MainActivity extends SlidingFragmentActivity implements
 		startService(this.downloadService);
 
 		DownLoadUtil.downLoad(intent, getApplicationContext());
+		
+		FlatUI.initDefaultValues(this.getApplicationContext());
+		FlatUI.setDefaultTheme(FlatUI.DARK);
+//		getActionBar().setBackgroundDrawable(FlatUI.getActionBarDrawable(this,FlatUI.DEEP, false));
 	}
 
 	public boolean onOptionsItemSelected(MenuItem item) {
