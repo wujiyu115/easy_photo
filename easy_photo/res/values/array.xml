@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>陌陌</item>
+        <item>美拍</item>
+        <item>Instagram</item>
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>Flickr</item>
+        <item>Vine</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/momo_icon</item>
+        <item>@drawable/meipai_icon</item>
+        <item>@drawable/instagram_icon</item>
+        <item>@drawable/facebook_icon</item>
+        <item>@drawable/twitte_icon</item>
+        <item>@drawable/flickr_icon</item>
+        <item>@drawable/vine_icon</item>
+    </array>
+
+</resources>

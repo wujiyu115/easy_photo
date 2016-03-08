@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">应用媒体下载器</string>
+    <string name="running">应用媒体下载器正在运行</string>
+    <string name="has_down">这个资源已经下载过</string>
+    <string name="action_manager">管理</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_cache">缓存</string>
+    <string name="txt_selector">主页</string>
+    <string name="action_save_desc">保存</string>
+    <string name="action_save_item">保存%1$d</string>
+    <string name="action_back">返回</string>
+    <string name="action_del_desc">删除</string>
+    <string name="action_del_item">删除%1$d</string>
+    <string name="cache_success">缓存成功</string>
+    <string name="del_success">删除成功</string>
+
+</resources>

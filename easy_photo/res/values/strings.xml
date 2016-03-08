@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">easy media</string>
+    <string name="running">easy media is running</string>
+    <string name="has_down">the file has download</string>
+    <string name="action_manager">Manager</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_cache">Cache</string>
+    <string name="txt_selector">Home</string>
+    <string name="action_save_desc">Save</string>
+    <string name="action_save_item">Save%1$d</string>
+    <string name="action_back">Back</string>
+    <string name="action_del_desc">Del</string>
+    <string name="action_del_item">Del%1$d</string>
+    <string name="cache_success">cache success</string>
+    <string name="del_success">del success</string>
+
+</resources>
