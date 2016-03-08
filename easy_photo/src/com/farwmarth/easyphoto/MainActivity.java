@@ -32,7 +32,6 @@ public class MainActivity extends SlidingFragmentActivity implements
 		return handler;
 	}
 
-	@SuppressLint("NewApi")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -44,15 +43,18 @@ public class MainActivity extends SlidingFragmentActivity implements
 		}
 		setContentView(R.layout.frame_content);
 		setBehindContentView(R.layout.frame_left_menu);
-
+		
+		int width = getWindowManager().getDefaultDisplay().getWidth();
+//		System.out.println("宽度................"+width);
+		
 		mSlidingMenu = getSlidingMenu();
 		mSlidingMenu.setMode(SlidingMenu.LEFT);
 		mSlidingMenu.setSecondaryShadowDrawable(R.drawable.drawer_shadow);
-//		 mSlidingMenu.setShadowWidth(R.dimen.shadow_width);
-//		 mSlidingMenu.setBehindOffset(600);
+		mSlidingMenu.setShadowWidth(width/ 40);
+//		mSlidingMenu.setBehindOffset(width / 5);
 		mSlidingMenu.setShadowDrawable(R.drawable.drawer_shadow);
 		mSlidingMenu.setShadowWidthRes(R.dimen.shadow_width);
-		mSlidingMenu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
+		mSlidingMenu.setBehindOffsetRes( R.dimen.slidingmenu_offset);
 		mSlidingMenu.setFadeDegree(0.35f);
 		mSlidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
 		FragmentTransaction fragmentTransaction = getSupportFragmentManager()
