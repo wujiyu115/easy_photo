@@ -55,8 +55,8 @@ public class DownloadService extends Service {
 		this.notification = new NotificationCompat.Builder(
 				getApplicationContext())
 				.setContentTitle(getString(R.string.running))
-				.setContentText(getString(R.string.running)).setSmallIcon(R.drawable.icon)
-				.addAction(R.drawable.icon_close, "", localPendingIntent2)
+				.setContentText(getString(R.string.running)).setSmallIcon(R.drawable.notification_icon)
+//				.addAction(R.drawable.icon_close, "", localPendingIntent2)
 				.setPriority(2).setOngoing(false)
 				.setContentIntent(localPendingIntent3).build();
 		this.notification.flags = (Notification.FLAG_ONGOING_EVENT | this.notification.flags);

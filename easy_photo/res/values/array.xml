@@ -10,6 +10,7 @@
         <item>Twitter</item>
         <item>Flickr</item>
         <item>Vine</item>
+        <item>微博</item>
     </string-array>
 
     <!-- Nav Drawer List Item Icons -->
@@ -22,6 +23,7 @@
         <item>@drawable/twitte_icon</item>
         <item>@drawable/flickr_icon</item>
         <item>@drawable/vine_icon</item>
+        <item>@drawable/weibo_icon</item>
     </array>
 
 </resources>

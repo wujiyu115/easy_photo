@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30dp"
             android:layout_toRightOf="@+id/action_show_menu"
             android:gravity="center"
             android:text="@string/txt_selector"

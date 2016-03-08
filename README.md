@@ -10,5 +10,6 @@ app照片下载应用
 + twitter
 + flickr
 + vine
++ 微博
 
 

@@ -48,8 +48,8 @@ public class MainActivity extends SlidingFragmentActivity implements
 		mSlidingMenu = getSlidingMenu();
 		mSlidingMenu.setMode(SlidingMenu.LEFT);
 		mSlidingMenu.setSecondaryShadowDrawable(R.drawable.drawer_shadow);
-		// mSlidingMenu.setShadowWidth(5);
-		// mSlidingMenu.setBehindOffset(100);
+//		 mSlidingMenu.setShadowWidth(R.dimen.shadow_width);
+//		 mSlidingMenu.setBehindOffset(600);
 		mSlidingMenu.setShadowDrawable(R.drawable.drawer_shadow);
 		mSlidingMenu.setShadowWidthRes(R.dimen.shadow_width);
 		mSlidingMenu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
